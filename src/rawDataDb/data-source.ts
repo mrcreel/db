@@ -1,10 +1,8 @@
 import 'reflect-metadata'
 import { DataSource } from 'typeorm'
 import { School } from './entity/School'
-/*
 import { Season } from './entity/Season'
 import { Game } from './entity/Game'
-*/
 
 export const AppDataSource = new DataSource({
   type: 'mongodb',
@@ -13,7 +11,7 @@ export const AppDataSource = new DataSource({
   useUnifiedTopology: true,
   synchronize: true,
   logging: true,
-  entities: [School], //, Season, Game],
+  entities: [School, Season, Game],
   migrations: ['src/migration/**/*.ts'],
   subscribers: ['src/subscriber/**/*.ts'],
 })
