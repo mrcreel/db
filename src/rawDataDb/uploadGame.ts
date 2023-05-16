@@ -1,6 +1,6 @@
 import 'reflect-metadata'
 
-import { AppDataSource } from '../data-source'
+import { AppDataSource } from '../utils/data-source'
 
 import { gamesData } from '../../../scraper/rawData/exports.js'
 import { Game } from './entity/Game'

@@ -1,6 +1,6 @@
 import 'reflect-metadata'
 import { DataSource } from 'typeorm'
-import { School } from './entity/School'
+import { School } from '../entity/School'
 /*
 import { Season } from './entity/Season'
 import { Game } from './entity/Game'
